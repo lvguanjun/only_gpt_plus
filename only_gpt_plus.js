@@ -5,6 +5,7 @@
 // @description  Toggle visibility of links without class "plus"
 // @author       lvguanjun
 // @match        https://chat-shared2.zhile.io/shared.html*
+// @match        https://chat-shared3.zhile.io/shared.html*
 // @grant        none
 // ==/UserScript==
 
