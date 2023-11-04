@@ -7,6 +7,7 @@
 // @match        https://chat-shared2.zhile.io/shared.html*
 // @match        https://chat-shared3.zhile.io/shared.html*
 // @grant        none
+// @run-at       document-end
 // ==/UserScript==
 
 (function () {
@@ -121,4 +122,18 @@
             }, 0);
         }
     }
+
+    const originalSwalFire = Swal.fire;
+
+    // 覆盖Swal.fire函数
+    Swal.fire = function (settings) {
+        // 检查是否为特定的调用
+        if (settings.title === '请珍惜账号' && settings.icon === 'warning') {
+            // 不要执行此Swal.fire调用
+            console.log('Blocked Swal.fire with title: 请珍惜账号');
+            return;
+        }
+        // 否则，调用原始Swal.fire函数
+        return originalSwalFire.apply(this, arguments);
+    };
 })();
