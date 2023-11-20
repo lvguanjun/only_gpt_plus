@@ -14,6 +14,18 @@ Only Gpt Plus 是一个用户脚本，用于在 zhile 大佬的 [chat-shared](ht
 
 在 zhile 大佬的 [chat-shared](https://chat-shared3.zhile.io/shared.html) 页面上，点击页面右上角的 "PLUS" 按钮，即可切换链接的可见性。
 
+## CHAGELOG
+
+### v1.1.0
+
+- 重构了非 PLUS 可见性的切换逻辑，更快更流畅，拒绝卡顿。
+
+### v1.0.0
+
+- 初始版本
+- 更新 `match url` ，适配 zhile 大佬的网站变动
+- 增加了自动跳过警告弹窗的功能
+
 ## 展示
 
 ![only_plus](readme/only_plus.png)
